@@ -3679,19 +3679,21 @@ img {
     bottom: 0;
   }
   .cover.fullscreen {
-    height: auto;
+    height: 100vh;
     padding: 80px 0;
   }
   .cover.fullscreen.image-slider {
     padding: 0;
   }
+  /*
   .cover.fullscreen .container {
     top: 0;
     transform: none;
     -webkit-transform: none;
   }
+  */
   .cover.fullscreen .slides li {
-    height: auto;
+    height: 100vh;
     padding: 80px 0;
   }
 }
