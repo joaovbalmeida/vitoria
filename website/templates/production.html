@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+	{% load static %}
+	{% get_media_prefix as media_prefix %}
+		
+	<div class="main-container">
+		<section class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 text-center mb0 mt40">
+                        <h3 class="uppercase color-primary mb40 mb-xs-24">produção</h3>
+                        <p class="lead">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="image-square left">
+            <div class="col-md-6 image">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/small1.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1 content">
+                <h3>Build a slick, modern site faster than ever before.</h3>
+                <p class="mb0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </div>
+        </section>
+        <section class="image-square right">
+            <div class="col-md-6 image">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/small2.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 content">
+                <h3>Build a slick, modern site faster than ever before.</h3>
+                <p class="mb0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </div>
+        </section>
+        <section class="image-square left">
+            <div class="col-md-6 image">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/small1.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1 content">
+                <h3>Build a slick, modern site faster than ever before.</h3>
+                <p class="mb0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </div>
+        </section>
+        <section class="image-square right">
+            <div class="col-md-6 image">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/small2.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 content">
+                <h3>Build a slick, modern site faster than ever before.</h3>
+                <p class="mb0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+            </div>
+        </section>
+        <section class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h3 class="mb0 inline-block p32 p0-xs">Faça seu pedido</h3>
+                        <a class="btn btn-lg btn-white mb8 mt-xs-24" href="{% url 'contact' %}">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
