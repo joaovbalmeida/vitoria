@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 	{% load static %}
-	{% get_media_prefix as media_prefix %}
 
 	<section class="background-multiply cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
 		<ul class="slides">
@@ -12,9 +11,8 @@
 				<div class="container v-align-transform">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-							<img alt="Logo" class="image-small mb8" src="{% static 'img/emconstrucao.jpg' %}">
-							<h6 class="uppercase mb32">{{ content.titulo }}</h6>
-							<p class="text-justify mb0">{{ content.subtitulo }}</p>
+							<h2 class="uppercase mb32">{{ content.titulo }}</h6>
+							<p style="font-size: 18px;" class="text-justify mb0">{{ content.subtitulo }}</p>
 						</div>
 					</div>
 				</div>

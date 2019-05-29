@@ -11,13 +11,6 @@ from .models import Content, PartnersLogos
 from .forms import ContactForm
 
 # Create your views here.
-class ConstructionView(TemplateView):
-    template_name = "construction.html"
-
-    def get_context_data(self, **kwargs):
-        context = super(ConstructionView, self).get_context_data(**kwargs)
-        return context
-
 class HomePageView(TemplateView):
     template_name = "home.html"
 

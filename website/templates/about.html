@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block title%}
+- Quem Somos
+{% endblock %}
 {% block content %}
 	{% load static %}
     {% get_media_prefix as media_prefix %}
@@ -25,7 +28,7 @@
                         <hr class="visible-xs">
                     </div>
                     <div class="col-md-5 col-sm-7">
-                        <p>{{ content.quemsomos_texto }}</p>
+                        <p style="white-space:pre-wrap">{{ content.quemsomos_texto }}</p>
                     </div>
                 </div>
             </div>
@@ -51,5 +54,4 @@
             </section>
         {% endif %}
     </div>
-
 {% endblock %}

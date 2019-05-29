@@ -1551,9 +1551,6 @@ nav.transparent {
 nav.transparent.fixed {
   background: #fff;
 }
-nav.transparent.fixed .logo-light {
-  display: none;
-}
 nav.transparent.fixed .logo-dark {
   display: inline;
 }
@@ -5022,26 +5019,6 @@ footer.bg-dark a {
 .bg-light .social-list a {
   color: #222;
 }
-.back-to-top {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-}
-.back-to-top:hover {
-  opacity: 1;
-}
-.bg-dark .back-to-top {
-  border-color: #fff;
-}
-.bg-dark .back-to-top:active,
-.bg-dark .back-to-top:focus {
-  color: #fff;
-}
-.bg-dark .back-to-top:hover {
-  background: none;
-}
 /*!---------- 36. SPACING ----------*/
 .mr0 {
   margin-right: 0;
@@ -5711,4 +5688,35 @@ footer.bg-dark a {
   .pb-xs-240 {
     padding-bottom: 240px !important;
   }
+}
+
+/* ScrollToTop */
+a.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+a.back-to-top i {
+  display: block;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #b9b017;
+  border-radius: 30px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+a.back-to-top:hover, a.back-to-top:focus {
+  text-decoration: none;
 }

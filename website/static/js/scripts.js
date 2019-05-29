@@ -1184,4 +1184,18 @@ var mr_cookies = {
 |*|  END COOKIE LIBRARY
 \*/
 
-
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('.back-to-top').fadeIn(200);
+    } else {
+        $('.back-to-top').fadeOut(200);
+    }
+});
+  
+$('.back-to-top').on('click',function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, 400);
+    return false;
+});

@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% block title%}
+- Frota
+{% endblock %}
 {% block content %}
 	{% load static %}
 
@@ -34,16 +37,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<h2 class="number">{{ content.nossafrota_titulo1 }}</h2>
-						<p>{{ content.nossafrota_texto1 }}</p>
+						<h2 class="number">{{ content.frota_titulo1 }}</h2>
+						<p>{{ content.frota_texto1 }}</p>
 					</div>
 					<div class="col-sm-4">
-						<h2 class="number">{{ content.nossafrota_titulo2 }}</h2>
-						<p>{{ content.nossafrota_texto2 }}</p>
+						<h2 class="number">{{ content.frota_titulo2 }}</h2>
+						<p>{{ content.frota_texto2 }}</p>
 					</div>
 					<div class="col-sm-4">
-						<h2>{{ content.nossafrota_titulo3 }}</h2>
-						<p>{{ content.nossafrota_texto3 }}</p>
+						<h2>{{ content.frota_titulo3 }}</h2>
+						<p>{{ content.frota_texto3 }}</p>
 					</div>
 				</div>
 			</div>
