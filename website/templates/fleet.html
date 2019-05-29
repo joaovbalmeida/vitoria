@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 	{% load static %}
-	{% get_media_prefix as media_prefix %}
 
 	<div class="main-container">
 		<section class="page-title page-title-2 image-bg overlay parallax">
 			<div class="background-image-holder">
-					<img alt="Background Image" class="background-image" src="img/cover15.jpg">
+					<img alt="Background Image" class="background-image" src="{% static 'img/fleet-bg.jpg' %}">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -25,8 +24,8 @@
 						</div>
 					</div>
 					<div class="col-sm-5">
-						<img class="mt80 mt-xs-0 mb24" alt="Pic" src="img/resto5.jpg">
-						<img class="col-md-pull-4 relative" alt="Pic" src="img/resto6.jpg">
+						<img class="mt80 mt-xs-0 mb24" alt="Pic" src="{% static 'img/truck.jpg' %}">
+						<img class="col-md-pull-4 relative" alt="Pic" src="{% static 'img/trucks.jpg' %}">
 					</div>
 				</div>
 			</div>
@@ -35,16 +34,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<h2 class="number">2008</h2>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+						<h2 class="number">{{ content.nossafrota_titulo1 }}</h2>
+						<p>{{ content.nossafrota_texto1 }}</p>
 					</div>
 					<div class="col-sm-4">
-						<h2 class="number">150+</h2>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+						<h2 class="number">{{ content.nossafrota_titulo2 }}</h2>
+						<p>{{ content.nossafrota_texto2 }}</p>
 					</div>
 					<div class="col-sm-4">
-						<h2>Milhões</h2>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+						<h2>{{ content.nossafrota_titulo3 }}</h2>
+						<p>{{ content.nossafrota_texto3 }}</p>
 					</div>
 				</div>
 			</div>
